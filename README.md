@@ -16,8 +16,6 @@ I used the files within the schema folder to set this up: index.js, resolvers.js
 
 On the client side, I added a queries.js and a mutations.js. I also had to update the App.js, and all of the files within the pages and components folders. 
 
-This app is not currently functioning on heroku but should be fixed shortly.
-
 ## Visuals
 Screenshot:
 ![book search engine](./images/google-book-search-scrnshot.png)
