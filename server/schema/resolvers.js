@@ -34,13 +34,13 @@ const resolvers = {
 
       return{ token, user };
     },
-    async saveBook(parent, args, context) {
+    async saveBook(parent, { input }, context) {
       if(!context.user) {
         throw AuthenticationError('Please login')
       };
       const updatedUser = await User.findOneAndUpdate(
         { _id: context.user._id },
-        { $addToSet: { savedBooks: args } },
+        { $addToSet: { input: input } },
         { new: true, runValidators: true }
       );
       return updatedUser;
