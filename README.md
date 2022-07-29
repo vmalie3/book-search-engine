@@ -20,7 +20,7 @@ This app is not currently functioning on heroku but should be fixed shortly.
 
 ## Visuals
 Screenshot:
-![book search engine](./public/images/reactPort.png)
+![book search engine](./images/google-book-search-scrnshot.png)
 
 
 ## Resources
